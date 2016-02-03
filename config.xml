@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget>
+    <ThumbIcon>Images/icon/icon_106.png</ThumbIcon>
+    <BigThumbIcon>Images/icon/icon_115.png</BigThumbIcon>
+    <ListIcon>Images/icon/icon_85.png</ListIcon>
+    <BigListIcon>Images/icon/icon_95.png</BigListIcon>
+    <category>Videos</category>
+    <autoUpdate>y</autoUpdate>
+    <type>user</type>
+    <cpname></cpname>
+    <cpauthjs></cpauthjs>
+    <ver>1.006</ver>
+    <apptype>11</apptype>
+    <mgrver>3.000</mgrver>
+    <fullwidget>y</fullwidget>
+    <srcctl>y</srcctl>
+    <ticker>n</ticker>
+    <childlock>n</childlock>
+    <audiomute>n</audiomute>
+    <videomute>n</videomute>
+    <dcont>y</dcont>
+    <network>y</network>
+    <widgetname>Xpertos.tv</widgetname>
+    <description>Tu Canal de Tecnología</description>
+    <width>960</width>
+    <height>540</height>
+    <author>
+        <name>Andrés Hernández</name>
+        <email>pelones.creativos@gmail.com</email>
+        <organization>Pelones Creativos</organization>
+    </author>
+</widget>

@@ -1,0 +1,615 @@
+/* Defaults */
+
+*
+{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    background-color: transpant;
+	font-size:15px;
+	
+}
+
+/* Layout */
+body
+{
+	height: 540px;
+    width: 960px; 
+	
+}
+
+a 
+{
+	text-decoration:none;
+
+}
+
+#main
+{
+	background-image:url("../Images/bgMain.png");
+	background-repeat:no-repeat;
+	left: 0px; top: 0px;
+	position: absolute;
+	width: 960px; height: 540px;
+	
+}
+
+
+#error {
+    background: url('../Images/bgError.png') no-repeat top center;
+	display: none;
+    height:120px;
+	left: 200px;
+    margin: 0px;
+	padding: 40px;
+	position: absolute;
+	text-align: center;
+	top: 250px;
+	width: 490px;
+	z-index:100;
+	    
+}
+
+
+#top_menu
+{
+	font-size:18px;
+	overflow:hidden;
+	margin: 0px;
+	padding: 0px;
+	
+	position:absolute;
+	left:320px; top:113px; 
+	width:400px; height:40px;
+
+	list-style-type: none;
+	
+}
+
+#top_menu .menu
+{
+	float:left;
+	padding-top:7px;	
+	text-align:center;
+	color:#167397;
+	
+	width:160px; height: 40px;
+}
+
+#top_menu .current
+{
+	
+	float:left;
+	padding-top:7px;
+	
+	width:160px; height: 36px;
+	text-align:center;
+	
+	background: url('../Images/listBox/menu_selector.png') no-repeat top center;
+	color:#ffffff;
+	
+}
+
+
+#rightHalf
+{
+    position: absolute;
+    left:420px; top: -5px;
+    width: 540px; height: 540px;
+	/*background-color:#FFFF;*/
+    /*background-image:url("../Images/videoBox/rightHalf.png");*/
+}
+
+#videoBox_top
+{
+    position:absolute;
+    left:3px; top:167px;
+    width:488px; height:8px;
+    /*background-image:url("../Images/videoBox/top.png");*/
+}
+
+#videoBox_left
+{
+    position:absolute;
+    left: 2px; top:170px;
+    width:8px; height:278px;
+    /*background-image:url("../Images/videoBox/left.png");*/
+}
+
+#videoBox_right
+{
+    position:absolute;
+    left:482px; top:170px;
+    width:8px; height:278px;
+	/*background-image:url("../Images/videoBox/right.png");*/
+}
+
+#videoBox_bottom
+{
+    position:absolute;
+    left:0px; top:446px;
+    width:488px; height:56px;
+    /*background-image:url("../Images/videoBox/bottom.png");*/
+}
+
+#videoBox_center
+{
+    display:none;
+	position:absolute;
+    left:10px; top:175px;
+    width:472px; height:270px;
+    background-image:url("../Images/videoBox/center.png");
+	background-repeat:no-repeat;
+}
+
+#time
+{
+    position:absolute; 
+    left:10px; top:0px;
+    width:472px; height:24px;
+	color:#ffffff;
+	
+}
+
+#timeInfo
+{
+    position:absolute;
+    left:390px; bottom:6px;
+    width:90px; height:16px;
+    color:#ffffff;
+    text-align:left;
+    font-size:11px;
+	letter-spacing:0.1px;
+	overflow:auto;
+	
+}
+
+#progressBarBG
+{
+    position:absolute;
+    right:0px; top:8px;
+    width:430px; height:3px;
+    background-image:url("../Images/videoBox/progressBarBG.png");
+}
+
+#progressBar
+{
+    position:absolute;
+    left:0px; top:0px;
+    width:0%; height:3px;
+    background-image:url("../Images/videoBox/progressBar.png");
+}
+
+#volume
+{
+    position:absolute; 
+    left:10px; top:24px;
+    width:472px; height:24px;
+}
+
+#volumeIcon
+{
+    position:absolute;
+	overflow:visible;
+    left:4px; top:4px;
+    width:20px; height:20px;
+    background:url("../Images/videoBox/volume.png") no-repeat top left;
+	
+}
+
+#volumeBarBG
+{
+    position:absolute;
+    left:40px; top:15px;
+    width:144px; height:3px;
+    background-image:url("../Images/videoBox/volumeBarBG.png");
+}
+
+#volumeBar
+{
+    position:absolute;
+    left:0px; top:0px;
+    width:0%; height:3px;
+    background-image:url("../Images/videoBox/volumeBar.png");
+}
+
+#volumeInfo
+{
+    position:absolute;
+    left:190px; top:6px;
+    width:32px; height:16px;
+    color:#ffffff;
+    text-align:left;
+    font-size:12px;
+	
+}
+
+#videoControl
+{
+    position:absolute;
+    left:0px; top:0px;
+    width:50px; height:30px;
+	
+}
+
+#rewind
+{
+	display:none;
+	position:absolute;
+    left:0px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/krew.png") no-repeat top center;
+}
+
+#play
+{
+    position:absolute;
+    left:0px; top:5px;
+    width:20px; height:30px;
+    background:url("../Images/control/kplay.png") no-repeat top center;
+	opacity:0.5;
+	
+}
+
+#stop
+{
+    display:none;
+	position:absolute;
+    left:0px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kstop.png") no-repeat top center;
+    
+}
+
+#pause
+{
+    display:none;
+	position:absolute;
+    left:0px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kpause.png")  no-repeat top center;
+    
+}
+
+#forward
+{
+    display:none;
+	position:absolute;
+    left:0px; top:5px;
+    width:20px; height:20px;
+    background:url("../Images/control/kfwd.png")  no-repeat top center;
+    
+}
+
+#status
+{
+	position:absolute;
+    left:280px; top:28px;
+    width: 98px; height:16px;
+    color:#ffffff;
+    text-align:left;
+    font-size:12px;
+}
+
+#description 
+{
+	position:absolute;
+	left:430px; top:220px;
+    width:450px; height:200px;
+	overflow: hidden;
+		
+}
+
+#description p,
+#description p i,
+#description p a,
+#description p font,
+#description p b,
+#description p font a,
+#description p strong,
+#description p font strong,
+#description td a 
+{
+	margin-left:10px;	
+	margin-right:10px;
+	margin-top:0px;
+	margin-bottom:5px;	
+	
+	color:#666666;
+	text-align:justify;
+	
+	font-size:16px;
+	position:static;
+	display:block;
+	
+}
+#description p font a img,
+#description p a img,
+#description font a img,
+#description font img,
+#description p img,
+#description a img,
+#description img 
+{
+	border:0;
+	margin: 0px 10px 10px 10px;
+	max-width: 300px;
+	max-height: 200px;
+	position:static;
+	background-image:url("../Images/bgLoading.png");
+}
+
+#description a object, 
+#description p object,
+#description object  {
+	display: none;
+}
+
+#description a iframe, 
+#description p iframe,
+#description iframe  {
+	display: none;
+}
+
+
+/* Left Half */
+#leftHalf
+{
+    position:absolute;
+    left: 0px; top:0px;
+    width:440px; height:540px;
+    background-color:transparent;
+}
+
+#videoList
+{
+	background: url('../Images/Bar.png') no-repeat top right;
+    position:absolute;
+    left:60px; top:170px; 
+    width:300px; height:300px;
+    
+}
+
+#video0
+{
+    position:absolute;
+    left:0px; top:10px;
+    width:250px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:5px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+#video1
+{
+    position:absolute;
+    left:0px; top:60px;
+    width:250px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:5px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+
+#video2
+{
+    position:absolute;
+    left:0px; top:110px;
+    width:250px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:5px;
+    padding-top:5px;
+
+	overflow:hidden;
+}
+
+#video3
+{
+    position:absolute;
+    left:0px; top:160px;
+    width:250px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:5px;
+    padding-top:5px;
+	
+	overflow:hidden;
+}
+
+#video4
+{
+    position:absolute;
+    left:0px; top:210px;
+    width:250px; height:40px;
+    
+    background-repeat:no-repeat; 
+    padding-left:5px;
+    padding-top:5px;
+
+	overflow:hidden;
+}
+
+#videoCount
+{
+    position:absolute;
+    left:60px; top:460px;
+    width:60px; height:20px;
+	
+    text-align:left;
+    font-size:12px;
+}
+
+#previous
+{
+    position:absolute;
+    left:330px; top:180px;
+    width:30px; height:30px;
+    background-image:url("../Images/listBox/previous.png");
+	background-repeat:no-repeat;
+    opacity:0.2;
+}
+
+#next
+{
+    position:absolute;
+    left:330px; top:450px;
+    width:30px; height:30px;
+    background-image:url("../Images/listBox/next.png");
+	background-repeat:no-repeat;
+    opacity:0.2;
+}
+
+.style_videoList
+{    
+    color:#FFFFFF;
+	
+    text-align:left;
+	overflow:hidden;
+    font-size:16px;
+}
+
+#navi
+{
+	position: absolute;
+	top: 505px;
+	height: 35px;
+	width: 100%;
+	color:#ffffff;
+	font-weight:normal;
+}
+
+.help_navi
+{
+    position:absolute;
+    right: 10px; top:5px; 
+    height:28px;
+	float:right;
+}
+
+.style_navi {
+    bottom:9px;
+	font-size:14px;
+}
+
+
+
+/********************************************************************************/
+/* Ventana de terminos condiciones*/
+#samsung-terms {
+	position: absolute;
+	top:0px;
+	height: 540px;
+	width: 960px;
+	background-image:url('../Images/bgTerms.png') ;
+	background-repeat:no-repeat;
+	background-position:center;	
+	z-index: 100;
+}
+
+#terms-text {
+	position: absolute;
+	top: 120px;
+	left: 120px;
+	height: 370px;
+	width: 750px;
+	color:#282828;
+	padding: 10px;
+	text-decoration: none;    
+	text-overflow: ellipsis;
+	font-size:15px;
+	
+}
+
+#terms-text ul {
+	padding-left:25px;
+	
+}
+
+#terms-navi {
+	position: absolute;
+	height: 30px;
+	padding: 10px 10px 0px;
+	bottom: 10px;
+	right: 50px;
+	text-align: right;
+	text-decoration: none;
+	z-index:101;
+	
+}
+
+
+#terms-navi a.style_navi {
+	padding-left:5px;
+	padding-right:5px;
+	color:#282828;
+	
+}
+
+/*  --------------------------------------------  */
+
+#publicity {
+	right: 15px;
+	position: absolute;
+	top:15px;
+
+}
+
+#develop {
+	left: 0px;
+	position: absolute;
+	bottom: 5px;
+	z-index: 50;
+
+}
+
+
+
+/* Indicador de Carga*/
+#loading-indicator {
+	position: absolute;
+	color: #ffffff;
+	top: 280px;
+	left: 660px;
+	z-index: 100;
+}
+
+
+/* Video Control Full Screen */
+#pauseIcon, #playIcon, #stopIcon, #ffIcon, #rwIcon {
+	display:none;
+	border:0px;
+	position: absolute;
+	top: 220px;
+	left: 440px;
+	z-index:99;
+}
+
+#volInfo {
+	background:url("../Images/control/volIcon.png");
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:none;	
+	position: absolute;
+	top: 220px;
+	left: 440px;
+	z-index:150;
+	width:80px;
+	height:90px;
+	
+}
+#vol {
+	color:#ffffff;
+	position:absolute;
+	bottom:10px;
+	text-align:center;
+	font-size:14pt;
+	left:10px;
+}
